@@ -13,13 +13,12 @@
     /* success */
     --color-body-text: #434455;
     /* body-text */
-    --color-helper-text: #8e8f99;
+
     /* helper-text */
     --color-accent: #e7e9fc;
     /* accent-color */
     --color-light-mode-background: #f4f4fd;
     /* light-mode-background */
-    --color-customers-logo: #afb1b8;
 
     /* FONT SETTINGS */
     --font-logo: 'Raleway', sans-serif;
@@ -32,9 +31,7 @@
     /* logo */
     --font-weight-regular: 400;
     /* regular */
-    --font-weight-semi-bold: 500;
-    /* semi-bold */
-    --font-weight-bold: 600;
+    --font-weight-bold: 500;
     /* bold */
 
     /* FONT SIZES */
@@ -42,11 +39,11 @@
     /* logo */
     --font-size-body: 16px;
     /* body */
-    --font-size-h1: 56px;
+    --font-size-hero-tile: 56px;
     /* h1, hero, title */
-    --font-size-h2: 36px;
+    --font-size-section-top-title: 36px;
     /* h2 */
-    --font-size-h3: 20px;
+    --font-size-title: 20px;
     /* h3 */
     --font-size-small: 12px;
     /* small */
@@ -60,11 +57,11 @@
     /* LINE HEIGHT */
     --line-height-logo: 1.33;
     /* logo */
-    --line-height-h1: 1.07;
+    --line-height-hero-tile: 1.07;
     /* h1, hero, title */
-    --line-height-h2: 0.67;
+    --line-height-section-top-title: 0.67;
     /* h2 */
-    --line-height-h3: 1.2;
+    --line-height-title: 1.2;
     /* h3 */
     --line-height-small: 1.33;
     /* small */
@@ -263,20 +260,19 @@ body {
 
 /* HERO */
 .hero {
-    background-color: var(--color-dark);
     color: var(--color-primary-background);
-    padding: 192px 0px;
-    flex-grow: 1;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7) ,rgba(46, 47, 66, 0.7) ), url(../images/background/people-office.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .hero-container {
     text-align: center;
     width: 1440px;
     color: var(--color-primary-background);
+    padding: 192px 0px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--color-dark);
 }
 
 .hero-headline {
@@ -539,22 +535,20 @@ body {
 }
 
 .customers-logo-icon {
-    fill: var(--color-customers-logo);
+    fill: #8e8f99;
     height: 88px;
     width: 168px;
     box-sizing: border-box;
-    border: 1px solid var(--color-helper-text);
+    border: 1px solid #8e8f99;
     border-radius: 4px;
-    padding: 16px 32px 16px 32px;
+    padding: 16px 32px;
 }
-
 .customers-logo-link:hover .customers-logo-icon,
 .customers-logo-link:focus .customers-logo-icon,
 .customers-logo-link:active .customers-logo-icon {
-    fill: #404BBF;
-    border-color: #404BBF;
+  fill: var(--color-primary-brand);
+  border-color: var(--color-primary-brand);
 }
-
 /*-- PORTFOLIO --*/
 .portfolio-card-link {
     text-decoration: none;
