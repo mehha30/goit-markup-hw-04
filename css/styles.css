@@ -220,21 +220,6 @@ body {
     padding: 24px 0px;
 }
 
-.header-page{
-     color: var(--accent-color);
-    position: relative;
-    transition-property: color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
- }
-
- .header-page:hover,
- .header-page:focus {
-     color: var(--hover-background-color);
-
-     /* text-shadow: var(--button-shadow); */
- }
-
 .contacts-list {
     display: flex;
     align-items: center;
